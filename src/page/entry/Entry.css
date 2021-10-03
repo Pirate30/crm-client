@@ -1,0 +1,16 @@
+.entry {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron {
+  background-color: #f5f6fa;
+  padding: 8px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px -5px black;
+}

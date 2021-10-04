@@ -1,10 +1,15 @@
 import "./App.css";
+import DefaultLayout from "./layout/DefaultLayout";
+import Dashboard from "./page/dashboard/Dashboard";
 import Entry from "./page/entry/Entry";
 
 function App() {
   return (
     <div className="App">
-      <Entry />
+      {/* <Entry /> */}
+      <DefaultLayout>
+        <Dashboard />
+      </DefaultLayout>
     </div>
   );
 }

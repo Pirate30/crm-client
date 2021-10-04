@@ -1,11 +1,17 @@
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
+import BreadCrumb from "../../components/breadcrumb/BreadCrumb";
 import TicketTable from "../../components/ticket-table/TicketTable";
 import data from "../../data.json";
 
 export default function Dashboard() {
   return (
     <Container>
+      <Row>
+        <Col>
+          <BreadCrumb page="Dashboard" />
+        </Col>
+      </Row>
       <Row>
         <Col className="text-center mt-5    ">
           <Button

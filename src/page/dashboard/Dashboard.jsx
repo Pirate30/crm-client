@@ -1,11 +1,13 @@
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
+import TicketTable from "../../components/ticket-table/TicketTable";
+import data from "../../data.json";
 
 export default function Dashboard() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className="text-center mt-5    ">
           <Button
             variant="info"
             style={{ fontsize: "2rem", padding: "10px 30px" }}
@@ -13,6 +15,18 @@ export default function Dashboard() {
             New Ticket
           </Button>
         </Col>
+      </Row>
+      <Row>
+        <Col className="text-center mt-5">
+          <div>Total Tickets:100</div>
+          <div>Pending Tickets:10</div>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="mt-2">Recently Added Tickets</Col>
+      </Row>
+      <Row class="recent-ticket">
+        <TicketTable data={data} />
       </Row>
     </Container>
   );

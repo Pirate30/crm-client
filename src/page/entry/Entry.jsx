@@ -11,8 +11,8 @@ export default function Entry() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log("in submit");
-    // console.log("e", email);
-    // console.log("p", password);
+    console.log("e", email);
+    console.log("p", password);
   };
 
   return (

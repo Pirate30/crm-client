@@ -3,7 +3,22 @@
         "id":1,
         "status": "Client Response Pending",
         "subject":"xyz",
-        "addedAt":"2020-10-03"
+        "addedAt":"2020-10-03",
+        "history":[
+            {"date":"10-10-20",
+            "message" : "the message",
+            "messageby":"client"
+            },
+            {"date":"10-10-20",
+            "message" : "the message",
+            "messageby":"operator"
+            },
+            {"date":"10-10-20",
+            "message" : "the message",
+            "messageby":"client"
+            }
+
+        ]
     },
     {
         "id":2,

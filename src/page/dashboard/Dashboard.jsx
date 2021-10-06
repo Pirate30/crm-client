@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import BreadCrumb from "../../components/breadcrumb/BreadCrumb";
 import TicketTable from "../../components/ticket-table/TicketTable";
 import data from "../../data.json";
@@ -14,12 +15,14 @@ export default function Dashboard() {
       </Row>
       <Row>
         <Col className="text-center mt-5    ">
-          <Button
-            variant="info"
-            style={{ fontsize: "2rem", padding: "10px 30px" }}
-          >
-            New Ticket
-          </Button>
+          <Link to="/add-ticket">
+            <Button
+              variant="info"
+              style={{ fontsize: "2rem", padding: "10px 30px" }}
+            >
+              New Ticket
+            </Button>
+          </Link>
         </Col>
       </Row>
       <Row>

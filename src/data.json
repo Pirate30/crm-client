@@ -24,24 +24,84 @@
         "id":2,
         "status": "Client Response Pending",
         "subject":"abc",
-        "addedAt":"2020-10-04"
+        "addedAt":"2020-10-04",
+        "history":[
+            {"date":"11-11-21",
+            "message" : "the message 2",
+            "messageby":"client"
+            },
+            {"date":"11-11-20",
+            "message" : "the message 2",
+            "messageby":"operator"
+            },
+            {"date":"11-11-20",
+            "message" : "the message 2",
+            "messageby":"client"
+            }
+
+        ]
     },
     {
         "id":3,
         "status": "Client Response Pending",
         "subject":"pqr",
-        "addedAt":"2020-10-05"
+        "addedAt":"2020-10-05",
+        "history":[
+            {"date":"12-12-20",
+            "message" : "the message 3",
+            "messageby":"client"
+            },
+            {"date":"12-12-20",
+            "message" : "the message 3",
+            "messageby":"operator"
+            },
+            {"date":"13-13-20",
+            "message" : "the message 3",
+            "messageby":"client"
+            }
+
+        ]
     },
     {
         "id":4,
         "status": "Client Response Pending",
         "subject":"mno",
-        "addedAt":"2020-10-06"
+        "addedAt":"2020-10-06",
+        "history":[
+            {"date":"13-13-20",
+            "message" : "the message 4",
+            "messageby":"client"
+            },
+            {"date":"13-13-20",
+            "message" : "the message 4",
+            "messageby":"operator"
+            },
+            {"date":"13-13-20",
+            "message" : "the message 4",
+            "messageby":"client"
+            }
+
+        ]
     },
     {
         "id":5,
         "status": "Client Response Pending",
         "subject":"xyz",
-        "addedAt":"2020-10-07"
+        "addedAt":"2020-10-07",
+        "history":[
+            {"date":"14-14-20",
+            "message" : "the message 5",
+            "messageby":"client"
+            },
+            {"date":"14-14-20",
+            "message" : "the message 5",
+            "messageby":"operator"
+            },
+            {"date":"14-14-20",
+            "message" : "the message 5",
+            "messageby":"client"
+            }
+
+        ]
     }
 ]

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 import BreadCrumb from "../../components/breadcrumb/BreadCrumb";
 import MessageHistory from "../../components/message-history/MessageHistory";
 import data from "../../data.json";
 
-const ticket = data[0];
+// const ticket = data[0];
 export default function TicketDetails() {
+  const { id } = useParams();
+  const [ticket, setTicket] = useState("");
   const [reply, setReply] = useState("");
   //   console.log("reply is...", reply);
 
@@ -15,6 +18,18 @@ export default function TicketDetails() {
     console.log(reply);
     setReply("");
   };
+
+  useState(() => {
+    // setTicket(id);
+    for (let i = 0; i < data.length; i++) {
+      console.log(data[i].id);
+      if (data[i].id == id) {
+        setTicket(data[i]);
+        continue;
+      }
+    }
+  }, [id, data]);
+
   return (
     <Container>
       <Row>
@@ -33,9 +48,7 @@ export default function TicketDetails() {
         </Col>
       </Row>
       <Row className="mt-4">
-        <Col>
-          <MessageHistory msg={ticket.history} />
-        </Col>
+        <Col>{ticket.history && <MessageHistory msg={ticket.history} />}</Col>
       </Row>
       <hr />
       <Row className="mt-3">
